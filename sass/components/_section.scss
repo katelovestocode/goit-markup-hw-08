@@ -1,0 +1,23 @@
+/* --- Section class for Features, What we do, Our Team, Portfolio -----*/
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section--no-padding {
+  padding-bottom: 0;
+  padding-top: 94px;
+}
+
+.section__title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.section--background {
+  background-color: $thirdBcgColor;
+}

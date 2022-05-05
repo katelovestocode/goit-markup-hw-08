@@ -1,0 +1,48 @@
+/*--------- Features -------- */
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hidden-element {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  margin-top: -1px;
+}
+
+.features__item {
+  width: 270px;
+}
+
+.features__background {
+  @extend %flexCenter;
+  flex-wrap: wrap;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: $thirdBcgColor;
+  margin-bottom: $marginGap;
+}
+
+.features__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features__text {
+  color: $secondaryTextColor;
+  font-size: 14px;
+  line-height: 1.71;
+
+  margin-top: 10px;
+}
