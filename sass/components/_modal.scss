@@ -28,7 +28,7 @@
 }
 
 .modal {
-  @extend %positionAbsoluteCenter;
+  @include positionAbsoluteCenter;
   min-width: 528px;
   min-height: 581px;
 
@@ -45,9 +45,7 @@
 }
 
 .form__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(20px, 700, 1.15);
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
@@ -62,9 +60,7 @@
 }
 
 .form__label {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
+  @include font(12px, 400, 1.16);
   letter-spacing: 0.01em;
   text-align: left;
   padding-bottom: 4px;
@@ -91,9 +87,7 @@
   height: 120px;
   padding: 12px 16px;
   margin-bottom: 20px;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
+  @include font(12px, 400, 1.16);
   letter-spacing: 0.01em;
   color: $modalText;
   resize: none;
@@ -144,9 +138,7 @@
 }
 
 .form__disclaimer-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(14px, 400, 1.71);
   letter-spacing: 0.03em;
   color: $secondaryTextColor;
 }
@@ -165,7 +157,7 @@
 }
 
 .modal__button {
-  @extend %flexCenter;
+  @include flexCenter;
   margin: 0;
   padding: 0;
 

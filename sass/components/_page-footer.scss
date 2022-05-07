@@ -14,15 +14,13 @@ footer {
 }
 .contact-footer__location {
   color: $whiteColor;
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(14px, null, 1.71);
   font-style: normal;
   text-decoration: none;
 }
 .contact-footer__info {
   color: $footerTextColor;
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(14px, null, 1.71);
   font-style: normal;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -39,9 +37,7 @@ footer {
 
 .second-container__title,
 .third-container__title {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
+  @include font(14px, 700, 1.14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $whiteColor;
@@ -53,14 +49,14 @@ footer {
 }
 
 .social-media__list {
-  @extend %flexCenter;
+  @include flexCenter;
 }
 .social-media__list + .social-media__list {
   margin-left: 10px;
 }
 
 .social-media__link {
-  @extend %flexCenter;
+  @include flexCenter;
 
   color: $whiteColor;
   background-color: rgba(255, 255, 255, 0.1);
