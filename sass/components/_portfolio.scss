@@ -2,9 +2,9 @@
 
 /* ---------- Filter buttons ------------ */
 .filter {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  // display: flex;
+  // justify-content: center;
+  // margin-bottom: 50px;
 }
 
 .filter__button {
@@ -44,11 +44,11 @@
 /* --------- Card-Set ---------- */
 
 .card-set {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 
-  margin-top: calc(-1 * #{$marginGap});
-  margin-left: calc(-1 * #{$marginGap});
+  // margin-top: calc(-1 * #{$marginGap});
+  // margin-left: calc(-1 * #{$marginGap});
 }
 
 .card-set__item {

@@ -29,47 +29,67 @@
       <div class="container page-header">
         <a href="./index.html" class="logo"> Web<span class="logo--header">Studio</span></a>
 
-        <nav>
-          <ul class="site-nav list">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link site-nav__link--current"> Студия </a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link"> Портфолио </a>
-            </li>
-            <li class="site-nav__item"><a href="./" class="site-nav__link"> Контакты </a></li>
-          </ul>
-        </nav>
+        <button type="button" class="menu-button is-open" data-menu-button>
+          <svg
+            width="40"
+            height="40"
+            aria-expended="false"
+            aria-controls="menu-container"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use href="./images/svg/icons.svg#icon-menu_40px" class="icon-menu"></use>
+            <use href="./images/svg/icons.svg#icon-close_40px" class="icon-cross"></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <div class="nav-container">
+            <nav>
+              <ul class="site-nav list">
+                <li class="site-nav__item">
+                  <a href="./index.html" class="site-nav__link site-nav__link--current"> Студия </a>
+                </li>
+                <li class="site-nav__item">
+                  <a href="./portfolio.html" class="site-nav__link"> Портфолио </a>
+                </li>
+                <li class="site-nav__item"><a href="./" class="site-nav__link"> Контакты </a></li>
+              </ul>
+            </nav>
+          </div>
 
-        <ul class="contact-header list">
-          <li class="contact-header__item">
-            <a href="mailto:info@devstudio.com" class="contact-header__link">
-              <svg class="contact-header__icon" width="16" height="12">
-                <use href="./images/svg/icons.svg#icon-envelope1"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contact-header__item">
-            <a href="tel:+380961111111" class="contact-header__link">
-              <svg class="contact-header__icon" width="10" height="16">
-                <use href="./images/svg/icons.svg#icon-smartphone1"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <div class="contact-container">
+            <ul class="contact-header list">
+              <li class="contact-header__item">
+                <a href="mailto:info@devstudio.com" class="contact-header__link">
+                  <svg class="contact-header__icon" width="16" height="12">
+                    <use href="./images/svg/icons.svg#icon-envelope1"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="contact-header__item">
+                <a href="tel:+380961111111" class="contact-header__link">
+                  <svg class="contact-header__icon" width="10" height="16">
+                    <use href="./images/svg/icons.svg#icon-smartphone1"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
       <!-- Hero -->
       <section class="hero">
-        <h1 class="hero__title">
-          Эффективные решения <br />
-          для вашего бизнеса
-        </h1>
-        <button type="button" class="button hero__button" data-modal-open>Заказать услугу</button>
+        <div class="container">
+          <h1 class="hero__title">
+            Эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <button type="button" class="button hero__button" data-modal-open>Заказать услугу</button>
+        </div>
 
         <!-- Modal -->
         <div class="backdrop is-hidden" data-modal>
@@ -205,43 +225,44 @@
       </section>
 
       <!-- What we do -->
+      <div class="examples-container">
+        <section class="section">
+          <div class="container">
+            <h2 class="section__title">Чем мы занимаемся</h2>
+            <ul class="examples list">
+              <li class="examples__item">
+                <img
+                  src="./images/resized/box1.jpg"
+                  alt="Печатаем на клавиатуре"
+                  width="370"
+                  class="examples__overlay"
+                />
+                <p class="examples__title">Десктопные приложения</p>
+              </li>
 
-      <section class="section">
-        <div class="container">
-          <h2 class="section__title">Чем мы занимаемся</h2>
-          <ul class="examples list">
-            <li class="examples__item">
-              <img
-                src="./images/resized/box1.jpg"
-                alt="Печатаем на клавиатуре"
-                width="370"
-                class="examples__overlay"
-              />
-              <p class="examples__title">Десктопные приложения</p>
-            </li>
+              <li class="examples__item">
+                <img
+                  src="./images/resized/box2.jpg"
+                  alt="Держим телефон"
+                  width="370"
+                  class="examples__overlay"
+                />
+                <p class="examples__title">Мобильные приложения</p>
+              </li>
 
-            <li class="examples__item">
-              <img
-                src="./images/resized/box2.jpg"
-                alt="Держим телефон"
-                width="370"
-                class="examples__overlay"
-              />
-              <p class="examples__title">Мобильные приложения</p>
-            </li>
-
-            <li class="examples__item">
-              <img
-                src="./images/resized/box3.jpg"
-                alt="Держим Ipad"
-                width="370"
-                class="examples__overlay"
-              />
-              <p class="examples__title">Дизайнерские решения</p>
-            </li>
-          </ul>
-        </div>
-      </section>
+              <li class="examples__item">
+                <img
+                  src="./images/resized/box3.jpg"
+                  alt="Держим Ipad"
+                  width="370"
+                  class="examples__overlay"
+                />
+                <p class="examples__title">Дизайнерские решения</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
 
       <!-- Our Team -->
 
@@ -567,5 +588,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,4 +1,11 @@
 /* --------- What We Do --------- */
+
+.examples-container {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
 .examples {
   display: flex;
 }
