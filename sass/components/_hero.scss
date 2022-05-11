@@ -1,7 +1,7 @@
 /* --------- Hero ---------- */
 .hero {
   text-align: center;
-  padding: 200px 0;
+  padding: 118px 0;
   background-color: $secondaryDarkBcgColor;
 
   max-width: 1600px;
@@ -12,13 +12,22 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
 }
+
 .hero__title {
   color: $whiteColor;
-  @include font(44px, 900, 1.36);
+  @include font(26px, 900, 1.62);
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    @include font(44px, null, 1.36);
+  }
 }
 
 /* -------- Button ---------- */
