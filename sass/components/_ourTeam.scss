@@ -16,9 +16,22 @@
     flex-basis: calc((100% - 4 * 15px) / 2);
     margin-right: 30px;
   }
+
+  // &:nth-child(even) {
+  //   @include tablet {
+  //     margin-right: 0;
+  //   }
+  // }
+
   @include desktop {
     flex-basis: calc((100% - 8 * 15px) / 4);
   }
+
+  // &:nth-child(even) {
+  //   @include desktop {
+  //     margin-right: 30px;
+  //   }
+  // }
 }
 
 .card {

@@ -5,13 +5,44 @@ footer {
 }
 
 .page-footer {
-  //   display: flex;
-  //   align-items: baseline;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @include desktop {
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+/* ---- First container ----*/
+.first-container {
+  margin-bottom: 60px;
+  text-align: center;
+
+  @include desktop {
+    text-align: start;
+    margin-bottom: 0px;
+  }
 }
 
 .contact-footer {
   margin-top: 20px;
 }
+
+.contact-footer__item {
+  margin-bottom: 8px;
+
+  @include desktop {
+    margin-bottom: 9px;
+  }
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
 .contact-footer__location {
   color: $whiteColor;
   @include font(14px, null, 1.71);
@@ -31,8 +62,18 @@ footer {
   }
 }
 
+/* ---- Second container ----*/
+
 .second-container {
-  // margin-left: 70px;
+  text-align: center;
+
+  margin-bottom: 60px;
+
+  @include desktop {
+    text-align: start;
+    margin-left: 70px;
+    margin-bottom: 0px;
+  }
 }
 
 .second-container__title,
@@ -45,6 +86,8 @@ footer {
 
 .social-media {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 
@@ -69,20 +112,35 @@ footer {
   }
 }
 
+/* ---- Third container ----*/
+
 .third-container {
-  // margin-left: 93px;
+  text-align: center;
+
+  @include desktop {
+    text-align: start;
+    margin-left: 93px;
+  }
 }
 
 .third-container__title {
   margin-bottom: 20px;
 
   display: flex;
-  align-items: baseline;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
+
+  @include desktop {
+    align-items: baseline;
+    justify-content: flex-start;
+  }
 }
 
 .form-footer__input {
-  width: 358px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 450px;
   height: 50px;
   padding-left: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -91,6 +149,17 @@ footer {
 
   background-color: $secondaryDarkBcgColor;
   color: $whiteColor;
+
+  margin-bottom: 20px;
+
+  @include mobile {
+    width: 450px;
+  }
+  @include desktop {
+    display: inline;
+    width: 358px;
+    margin-bottom: 0px;
+  }
 }
 
 .form-footer__button {
@@ -99,10 +168,13 @@ footer {
   justify-content: center;
 
   height: 50px;
-  margin-left: 12px;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid $accentBlueColor;
+
+  @include desktop {
+    margin-left: 12px;
+  }
 
   &::after {
     display: inline-block;
