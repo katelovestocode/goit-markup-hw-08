@@ -777,6 +777,10 @@ a {
   margin-top: 50px;
 }
 
+.clients__item {
+  margin-bottom: 30px;
+}
+
 .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -787,7 +791,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;

@@ -6,6 +6,7 @@
 
 .clients__item {
   // display: flex;
+  margin-bottom: 30px;
 }
 .clients__item + .clients__item {
   // margin-left: $marginGap;
@@ -13,7 +14,7 @@
 
 .clients__link {
   @include flexCenter;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid $iconsBorderAndFill;
   border-radius: 4px;
