@@ -22,8 +22,7 @@
   </head>
 
   <body class="body">
-    <!-- Header of the Website -->
-
+    <!----- Header of the Website ------>
     <header>
       <div class="container page-header">
         <a href="./index.html" class="logo"> Web<span class="logo--header">Studio</span></a>
@@ -66,7 +65,7 @@
         </button>
       </div>
 
-      <!-- Mobile Menu -->
+      <!--------- Mobile Menu --------->
 
       <div class="mob-menu is-hidden">
         <div class="mob-menu-container">
@@ -123,7 +122,7 @@
     </header>
 
     <main>
-      <!-- Hero -->
+      <!-------- Hero --------->
       <section class="hero">
         <div class="container">
           <h1 class="hero__title">
@@ -133,7 +132,7 @@
           <button type="button" class="button hero__button" data-modal-open>Заказать услугу</button>
         </div>
 
-        <!-- Modal -->
+        <!------- Modal --------->
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <form class="form">
@@ -205,7 +204,7 @@
         </div>
       </section>
 
-      <!-- Features-->
+      <!-------- Features ---------->
 
       <section class="section section--no-padding">
         <div class="container">
@@ -266,39 +265,64 @@
         </div>
       </section>
 
-      <!-- What we do -->
+      <!---------- What we do ----------->
+
       <div class="examples-container">
         <section class="section">
           <div class="container">
             <h2 class="section__title">Чем мы занимаемся</h2>
             <ul class="examples list">
               <li class="examples__item">
-                <img
-                  src="./images/resized/box1.jpg"
-                  alt="Печатаем на клавиатуре"
-                  width="370"
-                  class="examples__overlay"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/resized/whatWeDo/1img-min.jpg    1x,
+                      ./images/resized/whatWeDo/1img@2x-min.jpg 2x
+                    "
+                    media="min-width: 1200px"
+                  />
+                  <img
+                    src="./images/resized/whatWeDo/1img-min.jpg"
+                    alt="Печатаем на клавиатуре"
+                    class="examples__overlay"
+                  />
+                </picture>
                 <p class="examples__title">Десктопные приложения</p>
               </li>
 
               <li class="examples__item">
-                <img
-                  src="./images/resized/box2.jpg"
-                  alt="Держим телефон"
-                  width="370"
-                  class="examples__overlay"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/resized/whatWeDo/2img-min.jpg    1x,
+                      ./images/resized/whatWeDo/2img@2x-min.jpg 2x
+                    "
+                    media="min-width: 1200px"
+                  />
+                  <img
+                    src="./images/resized/whatWeDo/2img-min.jpg"
+                    alt="Держим телефон"
+                    class="examples__overlay"
+                  />
+                </picture>
                 <p class="examples__title">Мобильные приложения</p>
               </li>
 
               <li class="examples__item">
-                <img
-                  src="./images/resized/box3.jpg"
-                  alt="Держим Ipad"
-                  width="370"
-                  class="examples__overlay"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/resized/whatWeDo/3img-min.jpg    1x,
+                      ./images/resized/whatWeDo/3img@2x-min.jpg 2x
+                    "
+                    media="min-width: 1200px"
+                  />
+                  <img
+                    src="./images/resized/whatWeDo/3img-min.jpg"
+                    alt="Держим Ipad"
+                    class="examples__overlay"
+                  />
+                </picture>
                 <p class="examples__title">Дизайнерские решения</p>
               </li>
             </ul>
@@ -306,7 +330,7 @@
         </section>
       </div>
 
-      <!-- Our Team -->
+      <!----------- Our Team ------------>
 
       <section class="section section--background">
         <div class="container">
@@ -315,11 +339,33 @@
           <ul class="team list">
             <li class="team__item">
               <article class="card">
-                <img
-                  src="./images/resized/member1.jpg"
-                  alt="Фотография Игора Демьяненко"
-                  width="450"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/resized/OurTeam/desktop/1img-min.jpg    1x,
+                      ./images/resized/OurTeam/desktop/1img@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/resized/OurTeam/tablet/1img-min.jpg    1x,
+                      ./images/resized/OurTeam/tablet/1img@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/resized/OurTeam/mobile/1img-min.jpg    1x,
+                      ./images/resized/OurTeam/mobile/1img@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/resized/OurTeam/mobile/1img-min.jpg"
+                    alt="Фотография Игора Демьяненко"
+                  />
+                </picture>
 
                 <div class="card__content">
                   <h3 class="card__name">Игорь Демьяненко</h3>
@@ -361,11 +407,33 @@
 
             <li class="team__item">
               <article class="card">
-                <img
-                  src="./images/resized/member2.jpg"
-                  alt="Фотография Ольгы Репиной"
-                  width="450"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/resized/OurTeam/desktop/2img-min.jpg    1x,
+                      ./images/resized/OurTeam/desktop/2img@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/resized/OurTeam/tablet/2img-min.jpg    1x,
+                      ./images/resized/OurTeam/tablet/2img@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/resized/OurTeam/mobile/2img-min.jpg    1x,
+                      ./images/resized/OurTeam/mobile/2img@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/resized/OurTeam/mobile/2img-min.jpg"
+                    alt="Фотография Ольгы Репиной"
+                  />
+                </picture>
 
                 <div class="card__content">
                   <h3 class="card__name">Ольга Репина</h3>
@@ -406,11 +474,34 @@
 
             <li class="team__item">
               <article class="card">
-                <img
-                  src="./images/resized/member3.jpg"
-                  alt="Фотография Николая Тарасова"
-                  width="450"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/resized/OurTeam/desktop/3img-min.jpg    1x,
+                      ./images/resized/OurTeam/desktop/3img@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/resized/OurTeam/tablet/3img-min.jpg    1x,
+                      ./images/resized/OurTeam/tablet/3img@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/resized/OurTeam/mobile/3img-min.jpg    1x,
+                      ./images/resized/OurTeam/mobile/3img@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/resized/OurTeam/mobile/3img-min.jpg"
+                    alt="Фотография Николая Тарасова"
+                  />
+                </picture>
+
                 <div class="card__content">
                   <h3 class="card__name">Николай Тарасов</h3>
                   <p class="card__text">Marketing</p>
@@ -450,11 +541,33 @@
 
             <li class="team__item">
               <article class="card">
-                <img
-                  src="./images/resized/member4.jpg"
-                  alt="Фотография Михаила Ермакова"
-                  width="450"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/resized/OurTeam/desktop/4img-min.jpg    1x,
+                      ./images/resized/OurTeam/desktop/4img@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/resized/OurTeam/tablet/4img-min.jpg    1x,
+                      ./images/resized/OurTeam/tablet/4img@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 480px)"
+                    srcset="
+                      ./images/resized/OurTeam/mobile/4img-min.jpg    1x,
+                      ./images/resized/OurTeam/mobile/4img@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/resized/OurTeam/mobile/4img-min.jpg"
+                    alt="Фотография Михаила Ермакова"
+                  />
+                </picture>
 
                 <div class="card__content">
                   <h3 class="card__name">Михаил Ермаков</h3>
@@ -496,7 +609,7 @@
         </div>
       </section>
 
-      <!-- Clients -->
+      <!----------- Clients ------------>
 
       <section class="section">
         <div class="container">
@@ -555,7 +668,7 @@
       </section>
     </main>
 
-    <!-- Footer -->
+    <!---------- Footer ---------->
     <footer>
       <div class="container page-footer">
         <div class="first-container">
