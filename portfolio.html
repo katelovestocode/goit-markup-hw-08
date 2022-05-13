@@ -27,7 +27,7 @@
       <div class="container page-header">
         <a href="./index.html" class="logo"> Web<span class="logo--header">Studio</span></a>
 
-        <nav>
+        <nav class="navigation">
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link"> Студия </a>
@@ -44,7 +44,7 @@
         <ul class="contact-header list">
           <li class="contact-header__item">
             <a href="mailto:info@devstudio.com" class="contact-header__link">
-              <svg class="contact-header__icon" width="16" height="12">
+              <svg class="contact-header__icon contact-header__icon--mail">
                 <use href="./images/svg/icons.svg#icon-envelope1"></use>
               </svg>
               info@devstudio.com
@@ -52,13 +52,74 @@
           </li>
           <li class="contact-header__item">
             <a href="tel:+380961111111" class="contact-header__link">
-              <svg class="contact-header__icon" width="10" height="16">
+              <svg class="contact-header__icon contact-header__icon--phone">
                 <use href="./images/svg/icons.svg#icon-smartphone1"></use>
               </svg>
               +38 096 111 11 11
             </a>
           </li>
         </ul>
+
+        <button type="button" class="menu-open-btn">
+          <svg width="40" height="40">
+            <use href="./images/svg/icons.svg#icon-menu_40px" class="icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+
+      <div class="mob-menu is-hidden">
+        <div class="mob-menu-container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn">
+              <svg width="40" height="40">
+                <use href="./images/svg/icons.svg#icon-close_40px" class="icon-cross"></use>
+              </svg>
+            </button>
+            <nav>
+              <ul class="menu-nav list">
+                <li class="menu-nav__item">
+                  <a href="./index.html" class="menu-nav__link"> Студия </a>
+                </li>
+                <li class="menu-nav__item">
+                  <a href="./portfolio.html" class="menu-nav__link"> Портфолио </a>
+                </li>
+                <li class="menu-nav__item"><a href="./" class="menu-nav__link"> Контакты </a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="mob-menu-bottom">
+            <ul class="menu-contact list">
+              <li class="menu-contact__item">
+                <a href="tel:+380961111111" class="menu-contact__link menu-contact__link--phone">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="menu-contact__item">
+                <a href="mailto:info@devstudio.com" class="menu-contact__link menu-contact__email">
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+
+            <ul class="menu-social list">
+              <li class="menu-social__item">
+                <a href="https://www.instagram.com/" class="menu-social__link"> Instagram </a>
+              </li>
+              <li class="menu-social__item">
+                <a href="https://twitter.com/" class="menu-social__link"> Twitter </a>
+              </li>
+              <li class="menu-social__item">
+                <a href="https://www.facebook.com/" class="menu-social__link"> Facebook </a>
+              </li>
+              <li class="menu-social__item">
+                <a href="https://www.linkedin.com" class="menu-social__link"> LinkedIn </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -88,26 +149,24 @@
           <ul class="card-set list">
             <li class="card-set__item">
               <a href="" class="card-set__link">
-                <article>
-                  <div class="card-set__thumb">
-                    <img
-                      src="./images/portfolio/img1.jpg"
-                      alt="открыт вебсайт технокряк"
-                      width="370"
-                    />
-                    <div class="card-set__overlay">
-                      <p class="card-set__text">
-                        Технокряк это современная площадка распространения коронавируса. Компании
-                        используют эту платформу для цифрового шпионажа и атак на защищённые сервера
-                        конкурентов.
-                      </p>
-                    </div>
+                <div class="card-set__thumb">
+                  <img
+                    src="./images/portfolio/img1.jpg"
+                    alt="открыт вебсайт технокряк"
+                    width="450"
+                  />
+                  <div class="card-set__overlay">
+                    <p class="card-set__text">
+                      Технокряк это современная площадка распространения коронавируса. Компании
+                      используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
                   </div>
-                  <div class="card-set__content">
-                    <h2 class="card-set__title">Технокряк</h2>
-                    <p class="card-set__subtitle">Веб-сайт</p>
-                  </div>
-                </article>
+                </div>
+                <div class="card-set__content">
+                  <h2 class="card-set__title">Технокряк</h2>
+                  <p class="card-set__subtitle">Веб-сайт</p>
+                </div>
               </a>
             </li>
 
@@ -118,7 +177,7 @@
                     <img
                       src="./images/portfolio/img2.jpg"
                       alt="два парня играют баскетбол"
-                      width="370"
+                      width="450"
                     />
                     <div class="card-set__overlay">
                       <p class="card-set__text">
@@ -143,7 +202,7 @@
                     <img
                       src="./images/portfolio/img3.jpg"
                       alt="лого ресторана Seafood"
-                      width="370"
+                      width="450"
                     />
                     <div class="card-set__overlay">
                       <p class="card-set__text">
@@ -165,7 +224,7 @@
               <a href="" class="card-set__link">
                 <article>
                   <div class="card-set__thumb">
-                    <img src="./images/portfolio/img4.jpg" alt="наушники" width="370" />
+                    <img src="./images/portfolio/img4.jpg" alt="наушники" width="450" />
                     <div class="card-set__overlay">
                       <p class="card-set__text">
                         Технокряк это современная площадка распространения коронавируса. Компании
@@ -189,7 +248,7 @@
                     <img
                       src="./images/portfolio/img5.jpg"
                       alt="две коробки лежит на столе"
-                      width="370"
+                      width="450"
                     />
                     <div class="card-set__overlay">
                       <p class="card-set__text">
@@ -214,7 +273,7 @@
                     <img
                       src="./images/portfolio/img6.jpg"
                       alt="большой компютерный монитор"
-                      width="370"
+                      width="450"
                     />
                     <div class="card-set__overlay">
                       <p class="card-set__text">
@@ -236,7 +295,7 @@
               <a href="" class="card-set__link">
                 <article>
                   <div class="card-set__thumb">
-                    <img src="./images/portfolio/img7.jpg" alt="открытый журнал" width="370" />
+                    <img src="./images/portfolio/img7.jpg" alt="открытый журнал" width="450" />
                     <div class="card-set__overlay">
                       <p class="card-set__text">
                         Технокряк это современная площадка распространения коронавируса. Компании
@@ -260,7 +319,7 @@
                     <img
                       src="./images/portfolio/img8.jpg"
                       alt="бирочка на которой написано label tag"
-                      width="370"
+                      width="450"
                     />
                     <div class="card-set__overlay">
                       <p class="card-set__text">
@@ -285,7 +344,7 @@
                     <img
                       src="./images/portfolio/img9.jpg"
                       alt="открыт компютер с вебсайтом"
-                      width="370"
+                      width="450"
                     />
                     <div class="card-set__overlay">
                       <p class="card-set__text">
