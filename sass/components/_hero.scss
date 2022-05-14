@@ -2,11 +2,10 @@
 .hero {
   text-align: center;
   padding: 118px 0;
-  background-color: $secondaryDarkBcgColor;
-
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  background-color: $secondaryDarkBcgColor;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/resized/hero/mobile/img-min.jpg');
   background-repeat: no-repeat;
@@ -55,7 +54,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     @include font(44px, null, 1.36);
   }
 }

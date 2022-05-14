@@ -3,9 +3,7 @@
 .examples-container {
   display: none;
   @include desktop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
   }
 }
 

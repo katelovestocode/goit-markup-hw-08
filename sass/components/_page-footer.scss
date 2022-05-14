@@ -17,7 +17,7 @@ footer {
   }
 }
 
-/* ---- First container ----*/
+/* ----- First container -----*/
 .first-container {
   margin-bottom: 60px;
   text-align: center;
@@ -85,9 +85,7 @@ footer {
 }
 
 .social-media {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter;
   margin-top: 20px;
 }
 
@@ -125,10 +123,7 @@ footer {
 
 .third-container__title {
   margin-bottom: 20px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter;
 
   @include desktop {
     align-items: baseline;
@@ -188,122 +183,3 @@ footer {
     background-repeat: no-repeat;
   }
 }
-
-/* ----------- Footer ------------ */
-// footer {
-//   padding: 60px 0;
-//   background-color: $secondaryDarkBcgColor;
-// }
-
-// .page-footer {
-//   //   display: flex;
-//   //   align-items: baseline;
-// }
-
-// .contact-footer {
-//   margin-top: 20px;
-// }
-// .contact-footer__location {
-//   color: $whiteColor;
-//   @include font(14px, null, 1.71);
-//   font-style: normal;
-//   text-decoration: none;
-// }
-// .contact-footer__info {
-//   color: $footerTextColor;
-//   @include font(14px, null, 1.71);
-//   font-style: normal;
-
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     color: $accentBlueColor;
-//   }
-// }
-
-// .second-container {
-//   // margin-left: 70px;
-// }
-
-// .second-container__title,
-// .third-container__title {
-//   @include font(14px, 700, 1.14);
-//   letter-spacing: 0.03em;
-//   text-transform: uppercase;
-//   color: $whiteColor;
-// }
-
-// .social-media {
-//   display: flex;
-//   margin-top: 20px;
-// }
-
-// .social-media__list {
-//   @include flexCenter;
-// }
-// .social-media__list + .social-media__list {
-//   margin-left: 10px;
-// }
-
-// .social-media__link {
-//   @include flexCenter;
-
-//   color: $whiteColor;
-//   background-color: rgba(255, 255, 255, 0.1);
-
-//   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     background-color: $accentBlueColor;
-//   }
-// }
-
-// .third-container {
-//   // margin-left: 93px;
-// }
-
-// .third-container__title {
-//   margin-bottom: 20px;
-
-//   display: flex;
-//   align-items: baseline;
-//   justify-content: flex-start;
-// }
-
-// .form-footer__input {
-//   width: 358px;
-//   height: 50px;
-//   padding-left: 15px;
-//   border: 1px solid rgba(255, 255, 255, 0.3);
-//   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-//   border-radius: 4px;
-
-//   background-color: $secondaryDarkBcgColor;
-//   color: $whiteColor;
-// }
-
-// .form-footer__button {
-//   display: inline-flex;
-//   align-items: center;
-//   justify-content: center;
-
-//   height: 50px;
-//   margin-left: 12px;
-
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//   border: 1px solid $accentBlueColor;
-
-//   &::after {
-//     display: inline-block;
-//     content: '';
-//     width: 24px;
-//     height: 24px;
-//     margin-left: 10px;
-
-//     background-image: url('../images/form/icon\ send.svg');
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//   }
-// }
