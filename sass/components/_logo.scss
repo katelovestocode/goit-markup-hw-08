@@ -1,8 +1,13 @@
 .logo {
+  @include font(24px, 700, 1.16);
+  letter-spacing: 0.03em;
+  text-decoration: none;
   color: $accentBlueColor;
   font-family: $secondaryFont;
-  @include font(26px, 700, 1.2);
-  text-decoration: none;
+
+  @include desktop {
+    @include font(26px, null, 1.2);
+  }
 
   &--header {
     color: $blackTextColor;
