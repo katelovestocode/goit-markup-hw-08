@@ -114,9 +114,13 @@ header {
 }
 
 .menu-contact__link--phone {
-  @include font(34px, 500, 1.18);
+  @include font(30px, 500, 1.18);
   letter-spacing: 0.02em;
   color: $accentBlueColor;
+
+  @include mobile {
+    @include font(34px, null, null);
+  }
 }
 
 .menu-contact__email {
@@ -151,10 +155,13 @@ header {
 }
 
 .menu-social__link {
-  @include font(18px, 500, 1.2);
+  @include font(12px, 500, 1.2);
   letter-spacing: 0.02em;
-
   color: $accentBlueColor;
+
+  @include mobile {
+    @include font(18px, null, null);
+  }
 }
 
 .no-scroll {

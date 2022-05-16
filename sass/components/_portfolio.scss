@@ -134,9 +134,26 @@
   width: 322px;
   height: 168px;
 
-  @include font(18px, null, 1.56);
+  @include font(14px, null, 1.56);
   letter-spacing: 0.03em;
   color: $whiteColor;
+  padding: 22px;
+
+  @include mobile {
+    width: 402px;
+    height: 140px;
+    @include font(18px, null, null);
+    padding: 0;
+  }
+
+  @include tablet {
+    width: 306px;
+    height: 168px;
+  }
+
+  @include desktop {
+    width: 322px;
+  }
 }
 
 .card-set__content {
